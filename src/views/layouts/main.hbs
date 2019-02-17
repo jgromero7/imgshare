@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>imgShare</title>
+
+    <!-- Bootstrap  4 -->
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"-->
+    
+    <!-- Bootstrap Watch -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    
+    <!-- FontAwemose -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+
+    <nav class="nabvar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="nabvar-brand">
+                <img src="/public/img/imgshare-logo.png" alt="log">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}}
+            </div>
+            <div class="col-md-4">
+                {{> stats }}
+                {{> popular }}
+                {{> comments }}
+            </div>
+        </div>
+    </div>
+    
+    <!-- JQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    
+    <!-- Custom Script -->
+    <script src="/public/js/scripts.js"></script>
+</body>
+</html>
